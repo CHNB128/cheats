@@ -1,0 +1,9 @@
+% nc, netcat, transfer
+
+# Transfer file (Reciver)
+
+nc -l -p <port> > <file_path>
+
+# Transfer file (Sender)
+
+nc <remote_ip> <port> < <file_path>
