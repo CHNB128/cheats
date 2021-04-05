@@ -1,0 +1,9 @@
+% ssh, tunel
+
+# Bind remote port to local
+
+ssh -L <local_port>:<remote_ip>:<remote_port> <username>@<remote_ip>
+
+# Bind local port to remote
+
+ssh -R <remote_port>:<remote_ip>:<local_port> <username>@<remote_ip>
