@@ -2,8 +2,13 @@
 
 # Bind remote port to local
 
-ssh -L <local_port>:<remote_ip>:<remote_port> <username>@<remote_ip>
+ssh -N -L <local_port>:<remote_ip>:<remote_port> <username>@<remote_ip>
 
 # Bind local port to remote
 
-ssh -R <remote_port>:<remote_ip>:<local_port> <username>@<remote_ip>
+ssh -N -R <remote_port>:<remote_ip>:<local_port> <username>@<remote_ip>
+
+# SSH socks5 tunnel
+
+ssh -N -D <port> <username>@<remote_ip>
+
